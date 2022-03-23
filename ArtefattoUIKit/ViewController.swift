@@ -42,19 +42,11 @@ class ViewController: UIViewController , UIImagePickerControllerDelegate, UINavi
     
     
     
-//    override func viewDidAppear(_ animated: Bool) {
-//        super.viewDidAppear(animated)
-//        
-//        let player = AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: "train", ofType: "mp4")!))
-//        
-//        let layer = AVPlayerLayer(player: player)
-//        layer.frame = view.bounds
-//        view.layer.addSublayer(layer)
-//        player.play()
+//    @IBSegueAction func VideoTest(_ coder: NSCoder) -> UIViewController? {
+//        return UIHostingController(coder: coder, rootView: VideoView())
 //    }
     
-    
-    @IBSegueAction func VideoTest(_ coder: NSCoder) -> UIViewController? {
+    @IBSegueAction func videoTest(_ coder: NSCoder) -> UIViewController? {
         return UIHostingController(coder: coder, rootView: VideoView())
     }
     
