@@ -7,12 +7,18 @@
 
 import SwiftUI
 import AVFoundation
+import AVKit
 
 struct VideoView: View {
+    let avPlayer = AVPlayer(url:  Bundle.main.url(forResource: "train", withExtension: "mp4")!)
+    
     var body: some View {
-        ZStack{
-            Color.pink
-           Text("Ciaooooo")
+        
+        VStack{
+            VideoPlayer(player: avPlayer)
+            
+        
+            
         }
     }
 }
