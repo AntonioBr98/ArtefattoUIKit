@@ -56,6 +56,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" image="photo" catalog="system" title=" Gallery">
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" red="0.96862745289999996" green="0.8078432083" blue="0.27450981740000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="imagePicker:" destination="E80-hJ-Tkb" eventType="touchUpInside" id="dG6-x4-vUE"/>
@@ -63,7 +64,8 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="jDl-nr-iaA"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" systemColor="labelColor"/>
                         <constraints>
                             <constraint firstItem="5lW-94-V5O" firstAttribute="centerY" secondItem="IpU-qL-iWC" secondAttribute="centerY" constant="225.5" id="CZt-ZA-pMr"/>
                             <constraint firstItem="CxA-uc-z5g" firstAttribute="centerX" secondItem="IpU-qL-iWC" secondAttribute="centerX" id="OYM-LN-KSB"/>
@@ -122,8 +124,8 @@
         <image name="photo" catalog="system" width="128" height="93"/>
         <image name="photo.artframe" catalog="system" width="128" height="93"/>
         <image name="xmark.diamond" catalog="system" width="128" height="122"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemTealColor">
             <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
