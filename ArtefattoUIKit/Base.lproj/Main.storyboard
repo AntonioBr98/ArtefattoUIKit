@@ -16,8 +16,8 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="Tgt-lA-r81">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.23197889819587625" green="0.23197889819587625" blue="0.23197889819587625" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="selectedImageTintColor" red="0.96862745289999996" green="0.8078432083" blue="0.27450981740000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </tabBar>
                     <connections>
                         <segue destination="Tfq-ST-spu" kind="relationship" relationship="viewControllers" id="kXJ-DQ-5jY"/>
@@ -36,16 +36,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CxA-uc-z5g">
-                                <rect key="frame" x="20" y="162" width="374" height="346"/>
-                                <color key="backgroundColor" red="0.96862745289999996" green="0.91933113934067023" blue="0.48783653597179888" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="346" id="0gQ-3O-bEs"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="374" id="1Ln-ih-4L0"/>
-                                    <constraint firstAttribute="width" constant="374" id="VU4-qT-QOI"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="343" id="W3I-MR-nTI"/>
-                                </constraints>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5lW-94-V5O">
                                 <rect key="frame" x="147" y="648.5" width="120" height="50"/>
                                 <constraints>
@@ -55,24 +45,30 @@
                                 <color key="tintColor" systemColor="systemYellowColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" image="photo" catalog="system" title=" Gallery">
-                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <color key="baseBackgroundColor" red="0.96862745289999996" green="0.8078432083" blue="0.27450981740000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseForegroundColor" red="0.96862745289999996" green="0.8078432083" blue="0.27450981740000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="imagePicker:" destination="E80-hJ-Tkb" eventType="touchUpInside" id="dG6-x4-vUE"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CxA-uc-z5g">
+                                <rect key="frame" x="20" y="171" width="374" height="346"/>
+                                <color key="backgroundColor" red="0.231372565" green="0.231372565" blue="0.231372565" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="346" id="Psd-1Y-oje"/>
+                                    <constraint firstAttribute="width" constant="374" id="XO7-J9-HDX"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="jDl-nr-iaA"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="1" green="0.92044833065696396" blue="0.63633654985263477" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="tintColor" systemColor="labelColor"/>
                         <constraints>
                             <constraint firstItem="5lW-94-V5O" firstAttribute="centerY" secondItem="IpU-qL-iWC" secondAttribute="centerY" constant="225.5" id="CZt-ZA-pMr"/>
-                            <constraint firstItem="CxA-uc-z5g" firstAttribute="centerX" secondItem="IpU-qL-iWC" secondAttribute="centerX" id="OYM-LN-KSB"/>
-                            <constraint firstItem="CxA-uc-z5g" firstAttribute="centerY" secondItem="IpU-qL-iWC" secondAttribute="centerY" id="ScA-EK-XZd"/>
+                            <constraint firstItem="CxA-uc-z5g" firstAttribute="centerX" secondItem="IpU-qL-iWC" secondAttribute="centerX" id="Vyk-8J-WLX"/>
+                            <constraint firstItem="CxA-uc-z5g" firstAttribute="centerY" secondItem="IpU-qL-iWC" secondAttribute="centerY" constant="-104" id="fSt-XK-rYA"/>
                             <constraint firstItem="5lW-94-V5O" firstAttribute="centerX" secondItem="IpU-qL-iWC" secondAttribute="centerX" id="m3A-hs-MXa"/>
-                            <constraint firstItem="CxA-uc-z5g" firstAttribute="centerX" secondItem="IpU-qL-iWC" secondAttribute="centerX" id="md5-Nm-CtI"/>
-                            <constraint firstItem="CxA-uc-z5g" firstAttribute="centerY" secondItem="IpU-qL-iWC" secondAttribute="centerY" constant="-113" id="ySq-JX-I5z"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Image Picker" id="W9O-HL-sEz"/>
@@ -82,7 +78,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1r6-wH-HA1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-342" y="790"/>
+            <point key="canvasLocation" x="-342.02898550724638" y="789.50892857142856"/>
         </scene>
         <!--AVKit-->
         <scene sceneID="M6p-zt-NUH">
@@ -92,17 +88,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JgQ-XX-K3D">
-                                <rect key="frame" x="0.0" y="140" width="414" height="673"/>
+                            <containerView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JgQ-XX-K3D">
+                                <rect key="frame" x="20" y="140" width="374" height="673"/>
                                 <connections>
                                     <segue destination="Xte-d4-ywh" kind="embed" destinationCreationSelector="test:" id="HIb-0p-HhL"/>
                                 </connections>
                             </containerView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="uog-nq-ZwL"/>
-                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <color key="backgroundColor" red="0.37554311477731961" green="0.37554311477731961" blue="0.37554311477731961" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="uog-nq-ZwL" firstAttribute="bottom" secondItem="JgQ-XX-K3D" secondAttribute="bottom" id="ASs-g5-OIM"/>
+                            <constraint firstItem="JgQ-XX-K3D" firstAttribute="centerY" secondItem="P7P-xU-F03" secondAttribute="centerY" constant="28.5" id="QWa-94-E9T"/>
+                            <constraint firstItem="JgQ-XX-K3D" firstAttribute="centerX" secondItem="P7P-xU-F03" secondAttribute="centerX" id="oCm-hh-jFF"/>
                             <constraint firstItem="uog-nq-ZwL" firstAttribute="trailing" secondItem="JgQ-XX-K3D" secondAttribute="trailing" id="oi5-oC-P5U"/>
                             <constraint firstItem="JgQ-XX-K3D" firstAttribute="leading" secondItem="uog-nq-ZwL" secondAttribute="leading" id="sT9-rX-vZ1"/>
                             <constraint firstItem="JgQ-XX-K3D" firstAttribute="top" secondItem="uog-nq-ZwL" secondAttribute="top" id="umL-l6-ayz"/>
@@ -167,9 +165,6 @@
         <image name="xmark.diamond" catalog="system" width="128" height="122"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemTealColor">
-            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

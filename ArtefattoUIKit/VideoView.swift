@@ -10,7 +10,7 @@ import AVFoundation
 import AVKit
 
 struct VideoView: View {
-    let avPlayer = AVPlayer(url:  Bundle.main.url(forResource: "train", withExtension: "mp4")!)
+    let avPlayer = AVPlayer(url:  Bundle.main.url(forResource: "train", withExtension: "mov")!)
     
     var body: some View {
         

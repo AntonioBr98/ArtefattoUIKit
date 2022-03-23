@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2B1F573127EB661300851C53 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1F573027EB661300851C53 /* VideoView.swift */; };
 		2B1F573327EB7A4000851C53 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1F573227EB7A4000851C53 /* ViewController2.swift */; };
+		2B1F573527EBE33000851C53 /* train.mov in Resources */ = {isa = PBXBuildFile; fileRef = 2B1F573427EBE33000851C53 /* train.mov */; };
 		2BCA3F3727EB24340035D57C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCA3F3627EB24340035D57C /* AppDelegate.swift */; };
 		2BCA3F3927EB24340035D57C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCA3F3827EB24340035D57C /* SceneDelegate.swift */; };
 		2BCA3F3B27EB24340035D57C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCA3F3A27EB24340035D57C /* ViewController.swift */; };
@@ -18,9 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2B1F572F27EB621E00851C53 /* train.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = train.mp4; path = ../../../Downloads/train.mp4; sourceTree = "<group>"; };
 		2B1F573027EB661300851C53 /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
 		2B1F573227EB7A4000851C53 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		2B1F573427EBE33000851C53 /* train.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = train.mov; path = ../../train.mov; sourceTree = "<group>"; };
 		2BCA3F3327EB24340035D57C /* ArtefattoUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArtefattoUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BCA3F3627EB24340035D57C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BCA3F3827EB24340035D57C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,7 +62,7 @@
 		2BCA3F3527EB24340035D57C /* ArtefattoUIKit */ = {
 			isa = PBXGroup;
 			children = (
-				2B1F572F27EB621E00851C53 /* train.mp4 */,
+				2B1F573427EBE33000851C53 /* train.mov */,
 				2BCA3F3627EB24340035D57C /* AppDelegate.swift */,
 				2BCA3F3827EB24340035D57C /* SceneDelegate.swift */,
 				2BCA3F3A27EB24340035D57C /* ViewController.swift */,
@@ -136,6 +137,7 @@
 				2BCA3F4327EB24360035D57C /* LaunchScreen.storyboard in Resources */,
 				2BCA3F4027EB24360035D57C /* Assets.xcassets in Resources */,
 				2BCA3F3E27EB24340035D57C /* Main.storyboard in Resources */,
+				2B1F573527EBE33000851C53 /* train.mov in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
