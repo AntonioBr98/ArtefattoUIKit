@@ -84,21 +84,38 @@
             </objects>
             <point key="canvasLocation" x="-342" y="790"/>
         </scene>
-        <!--View Controller-->
+        <!--AVKit-->
         <scene sceneID="M6p-zt-NUH">
             <objects>
                 <viewController id="xLT-Ph-ajR" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="P7P-xU-F03">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MfO-xq-T37">
+                                <rect key="frame" x="20" y="183" width="374" height="533"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="Otj-5p-Hc3" kind="embed" id="zgx-Dd-Wdm"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="uog-nq-ZwL"/>
                         <color key="backgroundColor" systemColor="systemTealColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="4KN-uS-8sr"/>
+                    <navigationItem key="navigationItem" title="AVKit" id="4KN-uS-8sr"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xTs-Ro-iVK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="574" y="790"/>
+            <point key="canvasLocation" x="573.91304347826087" y="789.50892857142856"/>
+        </scene>
+        <!--Hosting Controller-->
+        <scene sceneID="91P-fe-8IN">
+            <objects>
+                <hostingController id="Otj-5p-Hc3" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4mG-fv-CQH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1445" y="790"/>
         </scene>
         <!--Image-->
         <scene sceneID="cSl-X3-fq9">

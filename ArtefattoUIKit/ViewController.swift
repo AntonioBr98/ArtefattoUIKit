@@ -6,6 +6,10 @@
 //
 
 import UIKit
+import SwiftUI
+import AVKit
+import AVFoundation
+
 
 class ViewController: UIViewController , UIImagePickerControllerDelegate, UINavigationBarDelegate, UINavigationControllerDelegate{
 
@@ -33,6 +37,25 @@ class ViewController: UIViewController , UIImagePickerControllerDelegate, UINavi
         imageView.image = image
         
         dismiss(animated: true)
+    }
+    
+    
+    
+    
+//    override func viewDidAppear(_ animated: Bool) {
+//        super.viewDidAppear(animated)
+//        
+//        let player = AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: "train", ofType: "mp4")!))
+//        
+//        let layer = AVPlayerLayer(player: player)
+//        layer.frame = view.bounds
+//        view.layer.addSublayer(layer)
+//        player.play()
+//    }
+    
+    
+    @IBSegueAction func VideoTest(_ coder: NSCoder) -> UIViewController? {
+        return UIHostingController(coder: coder, rootView: VideoView())
     }
     
 }
