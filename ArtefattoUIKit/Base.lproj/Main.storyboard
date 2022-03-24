@@ -22,6 +22,7 @@
                     <connections>
                         <segue destination="Tfq-ST-spu" kind="relationship" relationship="viewControllers" id="kXJ-DQ-5jY"/>
                         <segue destination="TcV-pC-7do" kind="relationship" relationship="viewControllers" id="1PS-pW-mCL"/>
+                        <segue destination="TYe-QS-CkV" kind="relationship" relationship="viewControllers" id="rfk-vk-Lzh"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SXN-Mk-ysE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -139,11 +140,11 @@
             </objects>
             <point key="canvasLocation" x="-342.02898550724638" y="53.571428571428569"/>
         </scene>
-        <!--Item-->
+        <!--Video-->
         <scene sceneID="qLa-7M-x0j">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="TcV-pC-7do" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" image="xmark.diamond" catalog="system" id="KkP-ek-BnP"/>
+                    <tabBarItem key="tabBarItem" title="Video" image="play" catalog="system" id="KkP-ek-BnP"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="kz6-Jc-2HG">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
@@ -158,13 +159,131 @@
             </objects>
             <point key="canvasLocation" x="574" y="54"/>
         </scene>
+        <!--View-->
+        <scene sceneID="S1d-mr-Wjx">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oud-85-X9j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <navigationController id="TYe-QS-CkV" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="View" image="person.2.crop.square.stack" catalog="system" id="U69-CH-1Uq"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="jVo-Ha-3JN">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="PGv-4Y-jbu" kind="relationship" relationship="rootViewController" id="HJj-6c-iVs"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="1477" y="54"/>
+        </scene>
+        <!--Modal-->
+        <scene sceneID="cuj-ms-moc">
+            <objects>
+                <viewController title="Modal" id="PGv-4Y-jbu" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AiU-aj-h2o">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mlO-oB-wb0">
+                                <rect key="frame" x="132" y="677.5" width="150" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="9ou-fA-h3E"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="e8w-e9-QcN"/>
+                                    <constraint firstAttribute="height" constant="50" id="h6X-R3-dcL"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="z8f-WQ-8kt"/>
+                                </constraints>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Show">
+                                    <color key="baseForegroundColor" red="0.96862745289999996" green="0.8078432083" blue="0.27450981740000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="q6C-Hu-dze" kind="presentation" id="bak-Rb-khr"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sfondo" translatesAutoresizingMaskIntoConstraints="NO" id="xOZ-uy-hwh">
+                                <rect key="frame" x="20" y="159" width="374" height="225"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="225" id="bAE-D8-Oiw"/>
+                                    <constraint firstAttribute="width" constant="374" id="i0t-01-iH6"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sfondo2" translatesAutoresizingMaskIntoConstraints="NO" id="t4O-bO-mtm">
+                                <rect key="frame" x="20" y="415.5" width="374" height="225"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="225" id="LWn-5O-501"/>
+                                    <constraint firstAttribute="height" constant="225" id="QnR-Wl-j1I"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="374" id="ViS-C3-Hlm"/>
+                                    <constraint firstAttribute="width" constant="374" id="ZZX-7z-cxx"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="IaF-4W-j7F"/>
+                        <color key="backgroundColor" red="0.78431367870000002" green="0.52156865600000002" blue="0.7607843876" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="mlO-oB-wb0" firstAttribute="centerX" secondItem="AiU-aj-h2o" secondAttribute="centerX" id="0wo-Mx-aPf"/>
+                            <constraint firstItem="xOZ-uy-hwh" firstAttribute="centerY" secondItem="AiU-aj-h2o" secondAttribute="centerY" constant="-176.5" id="PyO-0y-CHm"/>
+                            <constraint firstItem="mlO-oB-wb0" firstAttribute="centerY" secondItem="AiU-aj-h2o" secondAttribute="centerY" constant="254.5" id="Xq7-8e-zro"/>
+                            <constraint firstItem="t4O-bO-mtm" firstAttribute="centerY" secondItem="AiU-aj-h2o" secondAttribute="centerY" constant="80" id="dDK-jB-5Jh"/>
+                            <constraint firstItem="xOZ-uy-hwh" firstAttribute="centerX" secondItem="AiU-aj-h2o" secondAttribute="centerX" id="edi-5J-xWc"/>
+                            <constraint firstItem="t4O-bO-mtm" firstAttribute="centerX" secondItem="AiU-aj-h2o" secondAttribute="centerX" id="ohd-f6-2wS"/>
+                        </constraints>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <color key="backgroundColor" red="0.68235301969999995" green="0.46274507050000002" blue="0.90196073060000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="Modal" id="JQs-gn-2oz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xwi-9i-iQg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2337.68115942029" y="53.571428571428569"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="8ej-X3-y7m">
+            <objects>
+                <viewController id="q6C-Hu-dze" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WxH-NE-c9q">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sfondo" translatesAutoresizingMaskIntoConstraints="NO" id="NN5-W5-nxo">
+                                <rect key="frame" x="-792.5" y="-245.5" width="1999" height="1333"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enjoy the view" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oGQ-Zz-iQQ">
+                                <rect key="frame" x="120" y="171" width="174" height="30"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="25"/>
+                                <color key="textColor" red="0.61984535159835685" green="0.39980416073868424" blue="0.80066043814432997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="x8l-Hv-gEB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="oGQ-Zz-iQQ" firstAttribute="centerX" secondItem="WxH-NE-c9q" secondAttribute="centerX" id="Fqc-EO-HZg"/>
+                            <constraint firstItem="oGQ-Zz-iQQ" firstAttribute="centerY" secondItem="WxH-NE-c9q" secondAttribute="centerY" constant="-235" id="RCV-Af-iyP"/>
+                            <constraint firstItem="NN5-W5-nxo" firstAttribute="centerX" secondItem="WxH-NE-c9q" secondAttribute="centerX" id="d4i-WO-CBp"/>
+                            <constraint firstItem="NN5-W5-nxo" firstAttribute="centerY" secondItem="WxH-NE-c9q" secondAttribute="centerY" id="kJu-LX-8M4"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="8r1-Na-eqF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tjh-Ye-3Ti" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3157" y="54"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="person.2.crop.square.stack" catalog="system" width="113" height="128"/>
         <image name="photo" catalog="system" width="128" height="93"/>
         <image name="photo.artframe" catalog="system" width="128" height="93"/>
-        <image name="xmark.diamond" catalog="system" width="128" height="122"/>
+        <image name="play" catalog="system" width="120" height="128"/>
+        <image name="sfondo" width="1999" height="1333"/>
+        <image name="sfondo2" width="5472" height="3648"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
