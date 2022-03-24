@@ -85,7 +85,7 @@
         <scene sceneID="M6p-zt-NUH">
             <objects>
                 <viewController id="xLT-Ph-ajR" customClass="ViewController2" customModule="ArtefattoUIKit" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="P7P-xU-F03">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="P7P-xU-F03">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -99,7 +99,7 @@
                         <viewLayoutGuide key="safeArea" id="uog-nq-ZwL"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="uog-nq-ZwL" firstAttribute="bottom" secondItem="JgQ-XX-K3D" secondAttribute="bottom" id="ASs-g5-OIM"/>
+                            <constraint firstItem="uog-nq-ZwL" firstAttribute="top" secondItem="JgQ-XX-K3D" secondAttribute="bottom" id="ASs-g5-OIM"/>
                             <constraint firstItem="JgQ-XX-K3D" firstAttribute="centerY" secondItem="P7P-xU-F03" secondAttribute="centerY" constant="28.5" id="QWa-94-E9T"/>
                             <constraint firstItem="JgQ-XX-K3D" firstAttribute="centerX" secondItem="P7P-xU-F03" secondAttribute="centerX" id="oCm-hh-jFF"/>
                             <constraint firstItem="uog-nq-ZwL" firstAttribute="trailing" secondItem="JgQ-XX-K3D" secondAttribute="trailing" id="oi5-oC-P5U"/>
