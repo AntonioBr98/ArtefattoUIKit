@@ -26,13 +26,5 @@ In addition to the transition, a segue also defines the presentation method of t
 When a new view controller is presented modally, you can use an unwind segue to allow the user to dismiss the new view controller and return to the previous one.
 
 
-Excerpt From
-Develop in Swift Fundamentals
-Apple Education
-https://books.apple.com/it/book/develop-in-swift-fundamentals/id1511184145?l=en
-This material may be protected by copyright.
-
-
-
 Conclusion: 
 Adding SwiftUI views in a UIKit application early on makes your future self a lot happier as you don’t have to rewrite it later on again. With a simple UIViewController extension method you can easily add a view in a few lines of code. Decide whether or not you can build a new feature with SwiftUI and make use of the UIHostingController to present SwiftUI views.
