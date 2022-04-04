@@ -3,11 +3,11 @@
 In this article you can see how various functions have been implemented by using the Storyboard (UIKit).
 
 ## What I implemented in this app:
-1- Tab bar<br/>
-2- Navigation Controller
-3- Image Picker (you can also crop the image)
-4- VideoPlayer (AVKit)
-5- Segues
+1- Tab bar <br/>
+2- Navigation Controller <br/>
+3- Image Picker (you can also crop the image) <br/>
+4- VideoPlayer (AVKit) <br/>
+5- Segues <br/>
 
 ## 1- Tab bar
 Tab bar controllers are implemented by the UITabBarController class. They allow a user of to switch between multiple arbitrary view controllers by maintaining an array of UIViewControllers.
