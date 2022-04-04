@@ -17,10 +17,14 @@ Tab bar controllers are implemented by the UITabBarController class. They allow 
 To add a Tab bar go in the library and write Tab Bar Controller, then add some Views, link the Tab Bar with the views by clicking Control and Drag&Drop on the View. You can change the tab item and the color.
 
 
+
+
 ## 2- Navigation Controller
 <img width="562" alt="Screenshot 2022-03-25 at 14 59 47" src="https://user-images.githubusercontent.com/92536025/161563060-4eed454a-9cf4-4093-8ce9-cecdb738784f.png">
 
 A navigation controller is a container view controller that manages one or more child view controllers in a navigation interface. In this type of interface, only one child view controller is visible at a time.
+
+
 
 
 ## 3- Image Picker
@@ -30,10 +34,14 @@ An image picker controller manages user interactions and delivers the results of
 The role and appearance of an image picker controller depend on the source type you assign to it before you present it.
 
 
+
+
 ## 4- VideoPlayer (AVKit)
 SwiftUI’s<img width="689" alt="Screenshot 2022-03-25 at 15 05 06" src="https://user-images.githubusercontent.com/92536025/161563278-08281aa5-acf8-4e16-9bc4-dca0f8d69f1b.png">
 
  VideoPlayer view lets us playback movies from any URL, local or remote. It comes from the AVKit framework, so you should make sure and add import AVKit before trying it out. If you want to play a remote video, use its remote URL instead.
+
+
 
 
 ## 5- Modal View / Costraints
